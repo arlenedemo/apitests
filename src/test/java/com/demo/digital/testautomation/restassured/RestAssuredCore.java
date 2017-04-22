@@ -23,7 +23,7 @@ public class RestAssuredCore {
 
     public static ExtractableResponse postAsMultipartAndReturnResponse(final String postDestination, final String jsonBody, final UploadDocumentType docType, final int status) {
 
-        return postAsMultipartAndReturnResponse(postDestination, jsonBody, FileReader.getAttachmentPath(docType), status);
+        return postAsMultipartAndReturnResponse(postDestination, jsonBody, new FileReader().getResourcePath(docType), status);
     }
 
     public static Response fetchGetResponse(final String postDestination, final String jsonBody, final int status){
