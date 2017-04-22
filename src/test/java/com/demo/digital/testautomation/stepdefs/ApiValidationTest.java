@@ -3,6 +3,7 @@ package com.demo.digital.testautomation.stepdefs;
 import com.demo.digital.testautomation.test.RequestValidation;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
 /**
  * Created by arlene.lehakra on 10/04/2017.
@@ -11,8 +12,13 @@ public class ApiValidationTest {
 
     RequestValidation requestValidation = new RequestValidation();
 
-    @Given("^that I send a request to document upload API with missing country code$")
-    public void that_I_send_a_request_to_document_upload_API_with_missing_country_code() throws Throwable {
+    @Given("^that I send a request to document upload API$")
+    public void that_I_send_a_request_to_document_upload_API() throws Throwable {
+
+    }
+
+    @When("^the country code is missing$")
+    public void the_country_code_is_missing() throws Throwable {
         requestValidation.countryCodeMissing();
     }
 
@@ -21,8 +27,8 @@ public class ApiValidationTest {
         requestValidation.verifyResponseCode(400);
     }
 
-    @Given("^that I send a request to document upload API with folder Id less than (\\d+) characters$")
-    public void that_I_send_a_request_to_document_upload_API_with_folder_Id_less_than_characters(int arg1) throws Throwable {
+    @When("^the folder Id length is less than (\\d+) characters$")
+    public void the_folder_Id_less_than_characters(int arg1) throws Throwable {
         requestValidation.folderIdLessThan10Char();
     }
 
