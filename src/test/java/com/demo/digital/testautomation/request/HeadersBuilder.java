@@ -15,16 +15,16 @@ public class HeadersBuilder {
     private static Config config = ConfigProvider.config();
     IAuthSamlTokenProvider samlTokenProvider = SamlTokenProvider.getSamlTokenProvider();
 
-    String hsbcSaml =String.format("%s", this.samlTokenProvider.getSamlToken());
-    String hsbcLocale = Locale.ENGLISH.toString();
+    String demoSaml =String.format("%s", this.samlTokenProvider.getSamlToken());
+    String demoLocale = Locale.ENGLISH.toString();
 
     public HeadersBuilder samlToken(final String samlToken){
-        this.hsbcSaml=samlToken;
+        this.demoSaml =samlToken;
         return this;
     }
 
     public HeadersBuilder locale(final String locale){
-        this.hsbcLocale=locale;
+        this.demoLocale =locale;
         return this;
     }
 

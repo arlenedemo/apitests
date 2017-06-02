@@ -8,12 +8,12 @@ import java.util.Map;
  */
 public class Headers {
 
-    private String hsbcSaml;
+    private String demoSaml;
     private String hsbcLocale;
 
     Headers(final HeadersBuilder builder){
-        this.hsbcSaml= builder.hsbcSaml;
-        //this.hsbcLocale=builder.hsbcLocale;
+        this.demoSaml = builder.demoSaml;
+        //this.demoLocale=builder.demoLocale;
     }
 
     public static class Builder{
@@ -23,8 +23,8 @@ public class Headers {
     public Map<String, String> getMappedHeaderValues(){
         Map<String, String> headers = new HashMap<String, String>();
 
-        headers.put("X-HSBC-Saml", this.hsbcSaml);
-        //headers.put("X-HSBC-Locale",hsbcLocale);
+        headers.put("X-DEMO-Saml", this.demoSaml);
+        //headers.put("X-HSBC-Locale",demoLocale);
 
         return headers;
     }

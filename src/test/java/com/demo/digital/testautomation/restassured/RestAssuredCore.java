@@ -2,7 +2,7 @@ package com.demo.digital.testautomation.restassured;
 
 import com.demo.digital.testautomation.request.Headers;
 import com.demo.digital.testautomation.request.HeadersBuilder;
-import com.demo.digital.testautomation.test.UploadDocumentType;
+import com.demo.digital.testautomation.actions.UploadDocumentType;
 import com.demo.digital.testautomation.util.FileReader;
 import com.jayway.restassured.response.ExtractableResponse;
 import com.jayway.restassured.response.Response;

@@ -1,5 +1,5 @@
 package com.demo.digital.testautomation.util;
-import com.demo.digital.testautomation.test.UploadDocumentType;
+import com.demo.digital.testautomation.actions.UploadDocumentType;
 import org.apache.commons.io.IOUtils;
 
 import java.io.File;
