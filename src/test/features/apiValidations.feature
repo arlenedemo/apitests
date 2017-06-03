@@ -4,14 +4,20 @@ Feature: API Validation
   I want to ensure all JSON payload(request) parameters are validated
 
   @test
-  Scenario: API Validation 01: CountyCode is missing in the request
-    Given that I send a request to document upload API
-    When the country code is missing
+  Scenario Outline: API Validation 01: CountyCode is missing in the request
+    Given that I send a request to document API
+    When the <field name> is missing
     Then the response code is "400"
 
+    Examples:
+    |field name|
+    |country code|
+    |folder Id|
+
+
   @test
-  Scenario: API Validation 02: Folder Id is less than 10 characters
-    Given that I send a request to document upload API
-    When the folder Id length is less than 10 characters
-    Then the response code is "400"
+  Scenario: API Validation 02: Document API returns a success response
+    Given that I send a request to document API
+    When all the mandatory fields are present in the request
+    Then the response code equals "200"
 

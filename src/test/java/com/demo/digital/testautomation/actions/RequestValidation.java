@@ -33,32 +33,10 @@ public class RequestValidation {
         documentData.documentFormat="pdf";
         documentData.fileName="test.pdf";
         documentData.countryCode="UK";
-        documentData.grpMbrCode="HBEU";
         documentData.folderId="1234567890";
-        documentData.folderType="000020";
         allDataPresent.documentData = documentData;
         return allDataPresent;
     }
-
-    private static ValidationResponse getFullResponse(){
-        ValidationResponse response = new ValidationResponse();
-        response.requestCorrelation="";
-        response.sessionCorrelation="";
-
-        ErrorInfo info= new ErrorInfo();
-        info.code="DU_VAL_FM_01";
-
-        ErrorDetail detail= new ErrorDetail();
-        detail.field="/documentData";
-        detail.message="Field is missing";
-
-        info.detail= detail;
-
-        response.errorInfo = new ErrorInfo[] {info};
-
-        return response;
-    }
-
 
     public void fileNameMissing(){
         Request allDataPresent = getFullRequest();
@@ -70,34 +48,6 @@ public class RequestValidation {
 
 
         response = RestAssuredCore.postAsMultipartAndReturnResponse((this.config.getString("iccmBaseApiUri")),jsonBody,UploadDocumentType.PDF_SMALL, HttpStatus.SC_BAD_REQUEST);
-
-        ValidationResponse serviceResp = gson.fromJson(response.asString(), ValidationResponse.class);
-
-        ErrorInfo[] errors = new ErrorInfo[1];
-        ErrorInfo err = new ErrorInfo();
-        err.code = "DU_VAL_MF_04";
-        err.detail = new ErrorDetail();
-        err.detail.field= "/documentData/fileName";
-        err.detail.message= "Field is missing!";
-
-        errors[0]= err;
-
-        Boolean[] errorPresent = new Boolean[1];
-
-        for (int i=0; i<serviceResp.errorInfo.length; i++){
-            for(int j=0; j<errors.length ; j++){
-                if(serviceResp.errorInfo[i].equals(errors[j])){
-                    errorPresent[j]= true;
-                }
-            }
-        }
-
-        boolean finalTrue = true;
-        for(int j=0; j<errorPresent.length; j++){
-            finalTrue = finalTrue && errorPresent[j];
-        }
-
-        assertTrue(finalTrue);
     }
 
     public void countryCodeMissing(){
@@ -113,42 +63,53 @@ public class RequestValidation {
 
         RestAssuredCore.printResponse(response);
 
-        ValidationResponse serviceResp = gson.fromJson(response.asString(), ValidationResponse.class);
-
-        ErrorInfo[] errors = new ErrorInfo[1];
-        ErrorInfo err = new ErrorInfo();
-        err.code = "DU_VAL_MF_03";
-        err.detail = new ErrorDetail();
-        err.detail.field= "/documentData/countryCode";
-        err.detail.message= "Field is missing!";
-
-        errors[0]= err;
-
-        Boolean[] errorPresent = new Boolean[1];
-
-        for (int i=0; i<serviceResp.errorInfo.length; i++){
-            for(int j=0; j<errors.length ; j++){
-                if(serviceResp.errorInfo[i].equals(errors[j])){
-                    errorPresent[j]= true;
-                }
-            }
-        }
-
-        boolean finalTrue = true;
-        for(int j=0; j<errorPresent.length; j++){
-            finalTrue = finalTrue && errorPresent[j];
-        }
-
-        assertTrue(finalTrue);
     }
 
-    public void verifyResponseCode(int expectedCode){
-        int expected = 400;
+    public void validRequest(){
+        Request allDataPresent = getFullRequest();
+
+        Gson gson= new Gson();
+        String jsonBody = gson.toJson(allDataPresent);
+        System.out.println(jsonBody);
+
+
+        response=RestAssuredCore.postAsMultipartAndReturnResponse("http://localhost:8081/tutorial1/action2",jsonBody,UploadDocumentType.JPEG_SMALL, HttpStatus.SC_OK);
+
+        RestAssuredCore.printResponse(response);
+
+    }
+
+    public void folderIdMissing() {
+        Request allDataPresent = getFullRequest();
+        allDataPresent.documentData.folderId = null;
+
+        Gson gson = new Gson();
+        String jsonBody = gson.toJson(allDataPresent);
+        System.out.println(jsonBody);
+
+
+        response = RestAssuredCore.postAsMultipartAndReturnResponse("http://localhost:8081/tutorial1/action3", jsonBody, UploadDocumentType.JPEG_SMALL, HttpStatus.SC_BAD_REQUEST);
+
+        RestAssuredCore.printResponse(response);
+    }
+
+    public void verifyErrorResponseCode(int expectedErrorCode){
+        int expectedCode = 400;
+        String expectedMessage= "Bad Request";
+
+        int actualCode = response.statusCode();
+        String jsonAsString = response.asString();
+
+        Assert.assertEquals(expectedCode, actualCode);
+        Assert.assertEquals(expectedMessage, jsonAsString);
+    }
+
+    public void verifySuccessResponseCode(int expectedCode){
+        int expected = 200;
         int actual = response.statusCode();
-        
+
         Assert.assertEquals(expected, actual);
     }
-
 
     public void folderIdLessThan10Char(){
         Request allDataPresent = getFullRequest();

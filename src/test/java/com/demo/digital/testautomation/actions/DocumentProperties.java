@@ -7,7 +7,5 @@ public class DocumentProperties {
     public String fileName;
     public String documentFormat;
     public String countryCode;
-    public String grpMbrCode;
     public String folderId;
-    public String folderType;
 }
