@@ -1,9 +1,13 @@
 package com.demo.digital.testautomation.stepdefs;
 
 import com.demo.digital.testautomation.actions.RequestValidation;
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by arlene.lehakra on 10/04/2017.
@@ -32,6 +36,12 @@ public class ApiValidationTest {
         requestValidation.verifyErrorResponseCode(400);
     }
 
+
+    @When("^the header is missing$")
+    public void the_header_is_missing(List<String> headerName) throws Throwable {
+        requestValidation.headerMissing(headerName.get(0));
+    }
+
     @When("^all the mandatory fields are present in the request$")
     public void all_the_mandatory_fields_are_present_in_the_request() throws Throwable {
         requestValidation.validRequest();
@@ -45,6 +55,11 @@ public class ApiValidationTest {
     @Then("^the response code equals \"([^\"]*)\"$")
     public void the_response_code_equals(String arg1) throws Throwable {
         requestValidation.verifySuccessResponseCode(200);
+    }
+
+    @Then("^the response text is \"([^\"]*)\"$")
+    public void the_response_text_is(String arg1) throws Throwable {
+        requestValidation.verifyResponseText("Saved");
     }
 
 

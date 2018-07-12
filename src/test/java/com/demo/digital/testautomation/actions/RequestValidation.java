@@ -65,6 +65,29 @@ public class RequestValidation {
 
     }
 
+    public void headerMissing(String headerName){
+        Request allDataPresent = getFullRequest();
+
+        switch (headerName) {
+            case "countryCode": allDataPresent.documentData.countryCode=null;
+                break;
+            case "folderId":  allDataPresent.documentData.folderId = null;;
+                break;
+            default: headerName = "Invalid month";
+                break;
+        }
+
+        Gson gson= new Gson();
+        String jsonBody = gson.toJson(allDataPresent);
+        System.out.println(jsonBody);
+
+
+        response=RestAssuredCore.postAsMultipartAndReturnResponse("http://localhost:8081/tutorial1/action3",jsonBody,UploadDocumentType.JPEG_SMALL, HttpStatus.SC_BAD_REQUEST);
+
+        RestAssuredCore.printResponse(response);
+
+    }
+
     public void validRequest(){
         Request allDataPresent = getFullRequest();
 
@@ -94,21 +117,28 @@ public class RequestValidation {
     }
 
     public void verifyErrorResponseCode(int expectedErrorCode){
-        int expectedCode = 400;
+        //int expectedCode = 400;
         String expectedMessage= "Bad Request";
 
         int actualCode = response.statusCode();
         String jsonAsString = response.asString();
 
-        Assert.assertEquals(expectedCode, actualCode);
+        Assert.assertEquals(expectedErrorCode, actualCode);
         Assert.assertEquals(expectedMessage, jsonAsString);
     }
 
     public void verifySuccessResponseCode(int expectedCode){
-        int expected = 200;
+        //int expected = 200;
         int actual = response.statusCode();
 
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expectedCode, actual);
+    }
+
+    public void verifyResponseText(String expectedText){
+        //String expected = "SAVED";
+        String actual = response.asString();
+
+        Assert.assertEquals(expectedText, actual);
     }
 
     public void folderIdLessThan10Char(){

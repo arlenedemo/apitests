@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>API Validation 02</title>
+    <title>API Validation 03</title>
     <link rel="shortcut icon" href="favicon.ico">
 
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -40,7 +40,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-            > API Validation 02
+            > API Validation 03
         </span>
         </div>
         <div class="rightbg"></div>
@@ -58,7 +58,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-04-2018 10:19</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-04-2018 15:54</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -100,10 +100,10 @@ I want to ensure all JSON payload(request) parameters are validated
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-square-o pending-icon fa-3x' title='PENDING'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">
-                                    API Validation 02
+                                <span class="pending-color">
+                                    API Validation 03
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -151,55 +151,40 @@ I want to ensure all JSON payload(request) parameters are validated
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
                     <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-PENDING">
                     <td width="60" class="step-icon">
                         <a name="1"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                  class="top-level-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">When all the mandatory fields are present in the request</span>
+                            <span class="top-level-step">When the header is missing<br><table class='embedded'><thead><th>countryCode</th></thead><tbody></tbody></table></span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.03s</span></td>
+                    <td width="100"><span class="top-level-step">PENDING</span></td>
+                    <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-IGNORED">
                     <td width="60" class="step-icon">
                         <a name="2"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                  class="top-level-icon"><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Then the response code equals "200"</span>
+                            <span class="top-level-step">Then the response code is "400"</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">IGNORED</span></td>
                     <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        <a name="3"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="top-level-step">Then the response text is "Saved"</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-PENDING">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.04s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>PENDING</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.01s</em></span></td>
                 </tr>
 
             </table>
