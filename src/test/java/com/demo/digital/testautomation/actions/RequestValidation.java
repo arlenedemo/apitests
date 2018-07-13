@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.demo.digital.testautomation.config.ConfigProvider;
 import com.demo.digital.testautomation.restassured.RestAssuredCore;
 import com.jayway.restassured.response.ExtractableResponse;
+import com.jayway.restassured.response.Response;
 import com.typesafe.config.Config;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -18,139 +19,18 @@ public class RequestValidation {
 
     private Config config;
 
-    private ExtractableResponse response;
+    private Response response;
 
     @Before
     public void setUp() throws Exception{
         this.config= ConfigProvider.config();
-        //RestAssured.baseURI= this.config.getString("BaseApiUri");
     }
 
+    public void verifyUsername(String status){
 
-    private static Request getFullRequest(){
-        Request allDataPresent = new Request();
-        DocumentProperties documentData = new DocumentProperties();
-        documentData.documentFormat="pdf";
-        documentData.fileName="test.pdf";
-        documentData.countryCode="UK";
-        documentData.folderId="1234567890";
-        allDataPresent.documentData = documentData;
-        return allDataPresent;
-    }
-
-    public void fileNameMissing(){
-        Request allDataPresent = getFullRequest();
-        allDataPresent.documentData.fileName=null;
-
-        Gson gson= new Gson();
-        String jsonBody = gson.toJson(allDataPresent);
-        System.out.println(jsonBody);
-
-
-        response = RestAssuredCore.postAsMultipartAndReturnResponse((this.config.getString("iccmBaseApiUri")),jsonBody,UploadDocumentType.PDF_SMALL, HttpStatus.SC_BAD_REQUEST);
-    }
-
-    public void countryCodeMissing(){
-        Request allDataPresent = getFullRequest();
-        allDataPresent.documentData.countryCode=null;
-
-        Gson gson= new Gson();
-        String jsonBody = gson.toJson(allDataPresent);
-        System.out.println(jsonBody);
-
-
-        response=RestAssuredCore.postAsMultipartAndReturnResponse("http://localhost:8081/tutorial1/action3",jsonBody,UploadDocumentType.JPEG_SMALL, HttpStatus.SC_BAD_REQUEST);
-
-        RestAssuredCore.printResponse(response);
-
-    }
-
-    public void headerMissing(String headerName){
-        Request allDataPresent = getFullRequest();
-
-        switch (headerName) {
-            case "countryCode": allDataPresent.documentData.countryCode=null;
-                break;
-            case "folderId":  allDataPresent.documentData.folderId = null;;
-                break;
-            default: headerName = "Invalid month";
-                break;
-        }
-
-        Gson gson= new Gson();
-        String jsonBody = gson.toJson(allDataPresent);
-        System.out.println(jsonBody);
-
-
-        response=RestAssuredCore.postAsMultipartAndReturnResponse("http://localhost:8081/tutorial1/action3",jsonBody,UploadDocumentType.JPEG_SMALL, HttpStatus.SC_BAD_REQUEST);
-
-        RestAssuredCore.printResponse(response);
-
-    }
-
-    public void validRequest(){
-        Request allDataPresent = getFullRequest();
-
-        Gson gson= new Gson();
-        String jsonBody = gson.toJson(allDataPresent);
-        System.out.println(jsonBody);
-
-
-        response=RestAssuredCore.postAsMultipartAndReturnResponse("http://localhost:8081/tutorial1/action2",jsonBody,UploadDocumentType.JPEG_SMALL, HttpStatus.SC_OK);
-
-        RestAssuredCore.printResponse(response);
-
-    }
-
-    public void folderIdMissing() {
-        Request allDataPresent = getFullRequest();
-        allDataPresent.documentData.folderId = null;
-
-        Gson gson = new Gson();
-        String jsonBody = gson.toJson(allDataPresent);
-        System.out.println(jsonBody);
-
-
-        response = RestAssuredCore.postAsMultipartAndReturnResponse("http://localhost:8081/tutorial1/action3", jsonBody, UploadDocumentType.JPEG_SMALL, HttpStatus.SC_BAD_REQUEST);
-
-        RestAssuredCore.printResponse(response);
-    }
-
-    public void verifyErrorResponseCode(int expectedErrorCode){
-        //int expectedCode = 400;
-        String expectedMessage= "Bad Request";
-
-        int actualCode = response.statusCode();
-        String jsonAsString = response.asString();
-
-        Assert.assertEquals(expectedErrorCode, actualCode);
-        Assert.assertEquals(expectedMessage, jsonAsString);
-    }
-
-    public void verifySuccessResponseCode(int expectedCode){
-        //int expected = 200;
-        int actual = response.statusCode();
-
-        Assert.assertEquals(expectedCode, actual);
-    }
-
-    public void verifyResponseText(String expectedText){
-        //String expected = "SAVED";
-        String actual = response.asString();
-
-        Assert.assertEquals(expectedText, actual);
-    }
-
-    public void folderIdLessThan10Char(){
-        Request allDataPresent = getFullRequest();
-        allDataPresent.documentData.folderId="123456";
-
-        Gson gson= new Gson();
-        String jsonBody = gson.toJson(allDataPresent);
-        System.out.println(jsonBody);
-
-
-        response = RestAssuredCore.postAsMultipartAndReturnResponse("http://localhost:8081/tutorial1/action3",jsonBody,UploadDocumentType.JPEG_SMALL, HttpStatus.SC_BAD_REQUEST);
+        response = RestAssuredCore.fetchResponse();
+        System.out.println("\n");
+        response.prettyPrint();
     }
 
 }

@@ -2,29 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7cd85bf-ee57-4ecc-84af-294fb6ef6e6e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/cucumberTest/Hooks.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_core_1_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_core_1_2_5.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_java_1_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_java_1_2_5.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_junit_1_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_junit_1_2_5.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/apitests.iml" afterPath="$PROJECT_DIR$/apitests.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/test/features/apiValidations.feature" afterPath="$PROJECT_DIR$/src/test/features/apiValidations.feature" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/DocumentProperties.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/Request.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/RequestValidation.java" afterPath="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/RequestValidation.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/UploadDocumentType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/restassured/RestAssuredCore.java" afterPath="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/restassured/RestAssuredCore.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/stepdefs/ApiValidationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/stepdefs/ApiValidationTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/05017ff860e4837d962b04009ce3c3eb.html" afterPath="$PROJECT_DIR$/target/site/serenity/05017ff860e4837d962b04009ce3c3eb.html" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/05017ff860e4837d962b04009ce3c3eb.json" afterPath="$PROJECT_DIR$/target/site/serenity/05017ff860e4837d962b04009ce3c3eb.json" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-cae1f5d247d89e43865a460aee07bce1.xml" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-cae1f5d247d89e43865a460aee07bce1.xml" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/cae1f5d247d89e43865a460aee07bce1.html" afterPath="$PROJECT_DIR$/target/site/serenity/cae1f5d247d89e43865a460aee07bce1.html" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/cae1f5d247d89e43865a460aee07bce1.json" afterPath="$PROJECT_DIR$/target/site/serenity/cae1f5d247d89e43865a460aee07bce1.json" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/util/FileReader.java" afterPath="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/util/FileReader.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/documents_to_attach/agile.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/documents_to_attach/bmpimage.bmp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/documents_to_attach/gifimage.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/documents_to_attach/jpegimage.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/documents_to_attach/test.pdf" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/actions/RequestValidation.class" afterPath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/actions/RequestValidation.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/authentication/SamlTokenProvider.class" afterPath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/authentication/SamlTokenProvider.class" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/restassured/RestAssuredCore.class" afterPath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/restassured/RestAssuredCore.class" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/stepdefs/ApiValidationTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/stepdefs/ApiValidationTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/util/FileReader$1.class" afterPath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/util/FileReader$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/util/FileReader.class" afterPath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/util/FileReader.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/demo/digital/testautomation/util/FileReader$1.class" afterPath="" />
     </list>
     <ignored path="document_upload_integration_tests.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +43,8 @@
       <file leaf-file-name="apiValidations.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/features/apiValidations.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="68">
+              <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -58,7 +53,7 @@
       <file leaf-file-name="Hooks.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/cucumberTest/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="68">
               <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,14 +65,24 @@
       <file leaf-file-name="ApiValidationTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/stepdefs/ApiValidationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="41" column="56" lean-forward="false" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+            <state relative-caret-position="221">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FileReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/util/FileReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="47">
@@ -97,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestValidation.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RequestValidation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/RequestValidation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/cucumberTest/TestRunner.java">
+      <file leaf-file-name="RestAssuredCore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/restassured/RestAssuredCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="204">
+              <caret line="16" column="102" lean-forward="false" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -177,8 +182,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/digital/testautomation/util/FileReader.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/hsbc/digital/testautomation/util/FileReader.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/testrunner/TestRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/restassured/RestAssuredCore.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/util/FileReader.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/apiValidations.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/cucumberTest/TestRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/request/HeadersBuilder.java" />
@@ -188,11 +191,13 @@
         <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/Connectivity.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/ErrorInfo.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/browserConfig/BrowserConfig.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/RequestValidation.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/stepdefs/ApiValidationTest.java" />
-        <option value="$PROJECT_DIR$/src/test/features/apiValidations.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/cucumberTest/Hooks.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/restassured/RestAssuredCore.java" />
+        <option value="$PROJECT_DIR$/src/test/features/apiValidations.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/stepdefs/ApiValidationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/util/FileReader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/RequestValidation.java" />
       </list>
     </option>
   </component>
@@ -293,7 +298,43 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="testautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apitests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apitests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apitests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apitests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testautomation" type="462c0819:PsiDirectoryNode" />
               <item name="cucumberTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apitests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apitests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="mongo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apitests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apitests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apitests" type="b2602c69:ProjectViewProjectNode" />
@@ -309,16 +350,34 @@
               <item name="apitests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="stepdefs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apitests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apitests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apitests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apitests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -681,35 +740,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__apiValidations - 2018.04.18 at 10h 46m 12s.xml">
+    <history-entry file="Feature__apiValidations - 2018.07.12 at 23h 11m 09s.xml">
       <configuration name="Feature: apiValidations" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__apiValidations - 2018.04.18 at 10h 47m 57s.xml">
+    <history-entry file="Feature__apiValidations - 2018.07.12 at 23h 12m 31s.xml">
       <configuration name="Feature: apiValidations" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__apiValidations - 2018.04.18 at 10h 55m 21s.xml">
+    <history-entry file="Feature__apiValidations - 2018.07.12 at 23h 19m 00s.xml">
       <configuration name="Feature: apiValidations" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__API_Validation_03__Document_API_returns_a_bad_request_response - 2018.04.18 at 10h 32m 57s.xml">
-      <configuration name="Scenario: API Validation 03: Document API returns a bad request response" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__apiValidations - 2018.07.12 at 23h 19m 31s.xml">
+      <configuration name="Feature: apiValidations" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__API_Validation_03__Document_API_returns_a_bad_request_response - 2018.04.18 at 10h 39m 29s.xml">
-      <configuration name="Scenario: API Validation 03: Document API returns a bad request response" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__apiValidations - 2018.07.12 at 23h 22m 30s.xml">
+      <configuration name="Feature: apiValidations" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__API_Validation_03__Document_API_returns_a_bad_request_response - 2018.04.18 at 10h 40m 56s.xml">
-      <configuration name="Scenario: API Validation 03: Document API returns a bad request response" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__apiValidations - 2018.07.13 at 08h 48m 46s.xml">
+      <configuration name="Feature: apiValidations" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__API_Validation_03__Document_API_returns_a_bad_request_response - 2018.04.18 at 10h 42m 22s.xml">
-      <configuration name="Scenario: API Validation 03: Document API returns a bad request response" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__apiValidations - 2018.07.13 at 08h 49m 18s.xml">
+      <configuration name="Feature: apiValidations" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__API_Validation_03__Document_API_returns_a_bad_request_response - 2018.04.18 at 10h 43m 17s.xml">
-      <configuration name="Scenario: API Validation 03: Document API returns a bad request response" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__apiValidations - 2018.07.13 at 08h 57m 41s.xml">
+      <configuration name="Feature: apiValidations" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__API_Validation_03__Document_API_returns_a_bad_request_response - 2018.04.18 at 10h 44m 05s.xml">
-      <configuration name="Scenario: API Validation 03: Document API returns a bad request response" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__apiValidations - 2018.07.13 at 09h 16m 50s.xml">
+      <configuration name="Feature: apiValidations" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__API_Validation_03__Document_API_returns_a_bad_request_response - 2018.04.18 at 10h 45m 33s.xml">
-      <configuration name="Scenario: API Validation 03: Document API returns a bad request response" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__apiValidations - 2018.07.13 at 09h 20m 21s.xml">
+      <configuration name="Feature: apiValidations" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -724,12 +783,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41830066" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46895424" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42973855" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2369281" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5735294" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3207262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3260212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5245098" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -743,7 +803,6 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19869708" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -785,14 +844,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/util/FileReader.java</url>
-          <line>53</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager>
@@ -883,13 +934,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.4/cucumber-core-1.2.4.jar!/cucumber/runtime/Utils.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/config/1.3.0/config-1.3.0-sources.jar!/com/typesafe/config/Config.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/jayway/restassured/rest-assured/2.9.0/rest-assured-2.9.0-sources.jar!/com/jayway/restassured/RestAssured.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/site/serenity/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -946,13 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/UploadDocumentType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/request/HeadersBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -994,28 +1031,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/ErrorDetail.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/ErrorInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/ValidationResponse.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/DocumentProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/util/FileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/restassured/RestAssuredCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -1023,17 +1038,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/browserConfig/BrowserConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/cucumberTest/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="51">
           <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
           <folding />
         </state>
@@ -1043,39 +1050,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/RequestValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/stepdefs/ApiValidationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="41" column="56" lean-forward="false" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/features/apiValidations.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/cucumberTest/Hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="68">
           <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1088,6 +1068,80 @@
         <state relative-caret-position="47">
           <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/browserConfig/BrowserConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/restassured/RestAssuredCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="102" lean-forward="false" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/features/apiValidations.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/DocumentProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/UploadDocumentType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/util/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/stepdefs/ApiValidationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/digital/testautomation/actions/RequestValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
